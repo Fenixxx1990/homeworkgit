@@ -1,0 +1,61 @@
+main {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+footer {
+  background-color: #121928;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #e3e3e3b7;
+}
+
+header a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+time {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 158%;
+  color: #fff;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.mainArticle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #fff;
+}
+
+.secondArticle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 188%;
+  color: #fff;
+}
