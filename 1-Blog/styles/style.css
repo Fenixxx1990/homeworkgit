@@ -2,48 +2,81 @@ main {
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
 }
 
-footer {
-  background-color: #121928;
+input.serch {
+  background: rgba(31, 41, 55, 0.6);
+  border-radius: 100px;
+  width: 224px;
+  height: 40px;
+  padding-left: 10px;
+  color: #fff;
   font-weight: 400;
   font-size: 16px;
-  line-height: 175%;
-  color: #e3e3e3b7;
 }
 
-header a {
+label.serch::after {
+  content: url(../images/search.png);
+}
+
+header a,
+label.serch {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
 }
 
-time {
+.time {
   font-weight: 400;
   font-size: 14px;
+  width: 180px;
+  height: 16px;
   color: #fff;
   opacity: 0.6;
+  margin: 80px auto 0;
 }
 
 h1 {
+  width: 525px;
+  height: 76px;
   font-weight: 400;
   font-size: 24px;
   line-height: 158%;
   color: #fff;
+  margin: 14px auto 0;
 }
 
 h2 {
+  width: 148px;
+  height: 28px;
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
   color: #fff;
+  margin: 0px auto 0;
 }
 
 h3 {
+  width: 85px;
+  height: 28px;
   font-weight: 400;
   font-size: 14px;
   line-height: 200%;
   color: #fff;
   opacity: 0.6;
+  margin: 0px auto;
+}
+
+address {
+  width: 148px;
+  height: 100px;
+  margin: 0px auto 28px;
+}
+
+#MainPhoto {
+  border-radius: 5px;
+  width: 896px;
+  height: 594px;
+  margin: 0px auto;
 }
 
 .mainArticle {
@@ -51,6 +84,9 @@ h3 {
   font-size: 20px;
   line-height: 160%;
   color: #fff;
+  width: 708px;
+  height: 268px;
+  margin: 69px auto 0px;
 }
 
 .secondArticle {
@@ -58,4 +94,18 @@ h3 {
   font-size: 16px;
   line-height: 188%;
   color: #fff;
+  width: 708px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #121928;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #e3e3e3b7;
+  width: 226px;
+  height: 28px;
+  margin: 0px auto;
 }
