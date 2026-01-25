@@ -74,8 +74,6 @@
   border-radius: 8px;
   fill: #fff;
   box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
-  display: flex;
-  flex-direction: column;
   padding: 48px 40px;
 }
 
@@ -163,4 +161,13 @@
 .inver {
   background-color: var(--color-button-inverse);
   color: var(--color-button-inverse-text);
+}
+
+@media (max-width: 640px) {
+  .palletes {
+    grid-template-columns: repeat(auto-fit, 320px);
+  }
+  .pallete {
+    padding: 48px 24px;
+  }
 }
