@@ -1,5 +1,37 @@
+* {
+  box-sizing: border-box;
+}
 main {
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  padding: 10px;
+}
+
+.el {
+  margin: 10px;
+}
+
+.el1 {
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 15px;
+  background-color: #4b5563;
+  border-radius: 10%;
+  padding: calc(35px / 3);
+  margin: 0;
 }
 
 input.serch {
@@ -42,36 +74,34 @@ h1 {
   font-size: 24px;
   line-height: 158%;
   color: #fff;
-  margin: 14px auto 0;
-}
-
-h2 {
-  width: 148px;
-  height: 28px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 175%;
-  color: #fff;
-  margin: 0px auto 0;
-}
-
-h3 {
-  width: 85px;
-  height: 28px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 200%;
-  color: #fff;
-  opacity: 0.6;
-  margin: 0px auto;
 }
 
 address {
-  width: 148px;
-  height: 100px;
-  margin: 0px auto 28px;
+  width: 214px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 15px;
 }
 
+.name-role {
+  display: flex; /* Родитель для h2 и h3 */
+  flex-direction: column; /* Элементы в ряд */
+  gap: 8px; /* Отступ между h2 и h3 */
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+h3 {
+  opacity: 0.6;
+}
 #MainPhoto {
   border-radius: 5px;
   width: 896px;
