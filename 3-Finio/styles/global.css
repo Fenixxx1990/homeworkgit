@@ -1,0 +1,54 @@
+:root {
+  --color-bg: #fff;
+  --color-inverse-bg: #357efe;
+  --color-button-bg: #357efe;
+  --color-button-hover-bg: #2663d4;
+  --color-button-inverse-bg: #fff;
+  --color-button-inverse-hover-bg: #f2f2f2;
+  --color-gradient-bg: linear-gradient(
+    -9deg,
+    var(--color-bg) 49%,
+    var(--color-inverse-bg) 49%,
+    transparent 50%,
+    transparent 100%
+  );
+  --color-gradient-bg-adaptive: linear-gradient(
+    -7deg,
+    var(--color-bg) 30%,
+    var(--color-inverse-bg) 30%,
+    transparent 50%,
+    transparent 100%
+  );
+  --color-text: #000;
+  --color-inverse-text: #fff;
+  --color-paragraph-text: rgba(78, 93, 124, 0.5);
+  --color-button-text: #fff;
+  --color-button-inverse-text: #357efe;
+  --color-link: rgba(255, 255, 255, 0.8);
+  --color-link-hover: #fff;
+
+  --layout-width: 1920px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-bg);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+}
+
+a {
+  text-decoration: none;
+}

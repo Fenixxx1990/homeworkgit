@@ -1,0 +1,163 @@
+.section_top {
+  margin-top: -1px;
+  position: relative;
+  background: var(--color-inverse-bg);
+}
+
+.section_top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-gradient-bg);
+  z-index: 0;
+}
+
+.section_main {
+  background-color: var(--color-bg);
+}
+
+.section_top__wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: var(--layout-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 161px 80px 264px;
+}
+
+.section_main__wrapper {
+  max-width: var(--layout-width);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 240px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center; /* Центрируем */
+  align-items: center;
+  flex-wrap: wrap; /* Разрешаем перенос */
+  gap: 20px;
+}
+
+.hero__left,
+.hero__right {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* position: relative; Чтобы z-index работал */
+  /* z-index: 2; */
+}
+
+.hero__left_h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  color: var(--color-inverse-text);
+  margin: 0;
+}
+
+.hero__right {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__left_logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.hero__left_logos,
+.hero__left_button {
+  margin-right: 111px;
+}
+
+.logo_Wb {
+  grid-column: 1 / 3;
+}
+.logo_Ozon {
+  justify-self: end;
+}
+.logo_Ali {
+  grid-column: 2 / -1;
+  justify-self: end;
+}
+
+.section_main__logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 64px;
+  align-items: center;
+}
+
+.section_main__logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section_main__line {
+  margin: 0 auto;
+  margin-bottom: 63px;
+}
+.section_main__content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+  justify-content: center;
+  gap: 63px;
+}
+
+.section_main__content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide__description {
+  padding-left: 115px;
+}
+
+.slide__description-even {
+  padding-right: 115px;
+}
+
+.hr {
+  grid-column: 1 /-1;
+  justify-self: center;
+  padding-top: 17px;
+  margin-bottom: 80px;
+}
+
+.grid-cell {
+  position: relative;
+  display: grid;
+}
+
+.sheet-data {
+  display: block;
+}
+
+.loop-data {
+  position: absolute;
+  top: 100px; /* регулируйте как нужно */
+  right: 0;
+  /* можно задать width/height или оставить по содержимому */
+  z-index: 1;
+  /* не забудьте, если картинка по размеру меньше основной, может быть pointer-events: none; */
+}
