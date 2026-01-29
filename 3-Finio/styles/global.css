@@ -1,20 +1,32 @@
 :root {
-  --color-text-header: #000;
-  --color-text-paragraph: rgba(78, 93, 124, 0.5);
-  --color-text-paragraph-inverse: rgba(255, 255, 255, 0.6);
-  --color-text: #4e5d7c;
-  --color-text-inverse: #fff;
   --color-bg: #fff;
-  --color-bg-yellow: #ffc736;
-  --color-bg-green: #1abc9c;
-  --color-bg-inverse: #357efe;
-  --color-button: #357efe;
-  --color-button-inverse: white;
-  --color-button-hover: #2b68d0;
+  --color-inverse-bg: #357efe;
+  --color-button-bg: #357efe;
+  --color-button-hover-bg: #2663d4;
+  --color-button-inverse-bg: #fff;
+  --color-button-inverse-hover-bg: #f2f2f2;
+  --color-gradient-bg: linear-gradient(
+    -9deg,
+    var(--color-bg) 49%,
+    var(--color-inverse-bg) 49%,
+    transparent 50%,
+    transparent 100%
+  );
+  --color-gradient-bg-adaptive: linear-gradient(
+    -7deg,
+    var(--color-bg) 30%,
+    var(--color-inverse-bg) 30%,
+    transparent 50%,
+    transparent 100%
+  );
+  --color-text: #000;
+  --color-inverse-text: #fff;
+  --color-paragraph-text: rgba(78, 93, 124, 0.5);
+  --color-button-text: #fff;
   --color-button-inverse-text: #357efe;
+  --color-link: rgba(255, 255, 255, 0.8);
+  --color-link-hover: #fff;
 
-  --border-8: 8px;
-  --border-10: 10px;
   --layout-width: 1920px;
 }
 
@@ -35,4 +47,8 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
+}
+
+a {
+  text-decoration: none;
 }

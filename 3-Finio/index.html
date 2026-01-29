@@ -7,143 +7,206 @@
     <link rel="stylesheet" href="./styles/components.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/page.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <section class="section">
-      <div class="section__wrapper">
-        <article class="headling">
-          <h2 class="headling__top">Тарифы</h2>
-          <p class="headling__bottom">
-            Все тарифы имеют полный функционал и отличаются только количеством
-            месяцев и выгодой
-          </p>
-        </article>
-        <div class="palletes">
-          <div class="pallets__content">
-            <div class="pallete">
-              <div class="pallete__content">
-                <article class="headling-2">
-                  <div class="headling-2__top unactive_BG"></div>
-                  <h3 class="headling-2__header">1 месяцев</h3>
-                  <p class="headling-2__bottom">
-                    Тариф подойдёт тем, кто ведёт краткосрочные проекты
-                  </p>
-                </article>
-              </div>
-              <div class="pallete__content">
-                <div class="price-sheet">
-                  <div class="price-sheet__item whithout-border-top">
-                    Общая стоимость
-                  </div>
-                  <div class="price-sheet__item whithout-border-top">
-                    1 990 ₽
-                  </div>
-                  <div class="price-sheet__item">Ваша выгода</div>
-                  <div class="price-sheet__item"><span>0 ₽</span></div>
-                  <div class="price-sheet__item whithout-border-bottom">
-                    Стоимость месяца
-                  </div>
-                  <div class="price-sheet__item whithout-border-bottom">
-                    1 990 ₽/мес
-                  </div>
-                </div>
-              </div>
-              <div class="pallete__content">
-                <button class="button">Бесплатно 14 дней</button>
-              </div>
+    <!-- Header start -->
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="#"
+          ><img
+            class="header__logo"
+            src="./images/logos/finio-logo.svg"
+            alt="Логотип Finio"
+        /></a>
+        <nav>
+          <ul class="menu">
+            <li class="menu_item">
+              <a href="#">Возможности</a>
+            </li>
+            <li class="menu_item">
+              <a href="#">Тарифы</a>
+            </li>
+            <li class="menu_item">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="menu_item">
+              <a href="#">Поддержка клиентов</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__lk"
+          ><button class="button button_inverse header__lk-button">
+            Личный кабинет
+          </button></a
+        >
+        <button class="header__mobile-menu-button">
+          <img src="./images/logos/menu-logo.svg" alt="Мобильное меню" />
+        </button>
+      </div>
+      <div class="line">
+        <img src="./images/logos/line-logo.svg" alt="Разделительная линия" />
+      </div>
+    </header>
+    <!-- Header end -->
+    <section class="section_top">
+      <div class="section_top__wrapper">
+        <div class="hero">
+          <div class="hero__left">
+            <h1 class="hero__left_h1">
+              Простой финансовый учёт для продавцов на маркетплейсах
+            </h1>
+            <button class="button button_inverse hero__left_button">
+              Попробовать 14 дней бесплатно
+            </button>
+            <div class="hero__left_logos">
+              <img
+                class="logo_Wb"
+                src="./images/logos/wb-logo.svg"
+                alt="Логотип Вайлдберриз"
+              />
+              <img
+                class="logo_Ozon"
+                src="./images/logos/ozon-logo.svg"
+                alt="Логотип Озон"
+              />
+              <img
+                class="logo_Ym"
+                src="./images/logos/ям-logo.svg"
+                alt="Логотип Яндекс Маркет"
+              />
+              <img
+                class="logo_Ali"
+                src="./images/logos/ali-logo.svg"
+                alt="Логотип Али Экспресс"
+              />
             </div>
           </div>
-          <div class="pallets__content">
-            <div class="pallete">
-              <div class="pallete__content">
-                <article class="headling-2">
-                  <div class="headling-2__top">Выгода 25%</div>
-                  <h3 class="headling-2__header">6 месяц</h3>
-                  <p class="headling-2__bottom">
-                    Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт
-                  </p>
-                </article>
-              </div>
-              <div class="pallete__content">
-                <div class="price-sheet">
-                  <div class="price-sheet__item whithout-border-top">
-                    Общая стоимость
-                  </div>
-                  <div class="price-sheet__item whithout-border-top">
-                    8 940 ₽
-                  </div>
-                  <div class="price-sheet__item without-border">
-                    Ваша выгода
-                  </div>
-                  <div class="price-sheet__item attantion">
-                    <span class="attantion-color">3 000 ₽</span>
-                  </div>
-                  <div class="price-sheet__item whithout-border-bottom">
-                    Стоимость месяца
-                  </div>
-                  <div
-                    class="price-sheet__item whithout-border-bottom top-border"
-                  >
-                    1 490 ₽/мес
-                  </div>
-                </div>
-              </div>
-              <div class="pallete__content">
-                <button class="button">Бесплатно 14 дней</button>
-              </div>
-            </div>
+          <div>
+            <img
+              class="hero__right"
+              src="./images/pictures/laptop-pictur.png"
+              alt="Ноутбук с графиками"
+            />
           </div>
-          <div class="pallets__content">
-            <div class="pallete inverse-pallete">
-              <div class="pallete__content inverse-pallete">
-                <article class="headling-2 inverse-pallete">
-                  <div class="headling-2__top">Выгода 50%</div>
-                  <h3 class="headling-2__header inverse-pallete">12 месяц</h3>
-                  <p class="headling-2__bottom inverse-pallete-1">
-                    Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и
-                    хочет сэкономить
-                  </p>
-                </article>
-              </div>
-              <div class="pallete__content inverse-pallete">
-                <div class="price-sheet inverse-pallete">
-                  <div
-                    class="price-sheet__item whithout-border-top inverse-pallete"
-                  >
-                    Общая стоимость
-                  </div>
-                  <div
-                    class="price-sheet__item whithout-border-top inverse-pallete"
-                  >
-                    11 880 ₽
-                  </div>
-                  <div class="price-sheet__item without-border inverse-pallete">
-                    Ваша выгода
-                  </div>
-                  <div class="price-sheet__item attantion">
-                    <span class="attantion-color">12 000 ₽</span>
-                  </div>
-                  <div class="price-sheet__item whithout-border-bottom">
-                    Стоимость месяца
-                  </div>
-                  <div
-                    class="price-sheet__item whithout-border-bottom top-border"
-                  >
-                    990 ₽/мес
-                  </div>
-                </div>
-              </div>
-              <div class="pallete__content">
-                <button class="button inver">Бесплатно 14 дней</button>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_main">
+      <div class="section_main__wrapper">
+        <div class="section_main__logos">
+          <div class="section_main__logo logo-1">
+            <img
+              src="./images/logos/grafic-logo.svg"
+              alt="Логотип с графиками"
+            />Анализ прибыли по
+            <br />
+            товарам и брендам
           </div>
+          <div class="section_main__logo logo-2">
+            <img
+              src="./images/logos/wb-uroboros-logo.svg"
+              alt="Логотип вайлдбериз в кружке из стрелок"
+            />Автоматический учёт
+            <br />
+            доходов Wildberries
+          </div>
+          <div class="section_main__logo logo-3">
+            <img src="./images/logos/rub-logo.svg" alt="Логотип рубля" />От 990
+            рублей в месяц
+            <br />
+            с полным функционалом
+          </div>
+        </div>
+        <img
+          class="section_main__line"
+          src="./images/logos/line2-logo.svg"
+          alt="Разделительная линия 2"
+        />
+        <div class="section_main__content">
+          <article class="slide__description description">
+            <h2 class="description__h2">Предотвращайте кассовые разрывы</h2>
+            <p class="description__p">
+              Заранее планируйте предстоящие платежи и поступления средств. Тем
+              самым, вы избежите неприятной ситуации с нехваткой средств на
+              счетах
+            </p>
+          </article>
+          <img
+            class="slide__slide"
+            src="./images/pictures/graphic1-pictur.png"
+            alt="График баланс на конец месяца"
+          />
+          <img
+            class="hr"
+            src="./images/logos/line2-logo.svg"
+            alt="Разделительная линия"
+          />
+          <img
+            class="slide__slide-even"
+            src="./images/pictures/graphics-pictur.png"
+            alt="Графики"
+          />
+          <article class="slide__description-even description">
+            <h2 class="description__h2">
+              Отчёты о прибыли и убытках всегда под рукой
+            </h2>
+            <p class="description__p">
+              Получите полную информацию о состоянии вашего бизнеса, включающую
+              все необходимые показатели для принятия правильных решений
+            </p>
+          </article>
+          <img
+            class="hr"
+            src="./images/logos/line2-logo.svg"
+            alt="Разделительная линия"
+          />
+          <article class="slide__description description">
+            <h2 class="description__h2">Какие товары приносят прибыль</h2>
+            <p class="description__p">
+              Находите точки роста, делайте упор на рентабельные товары и
+              увеличивайте свой доход
+            </p>
+          </article>
+          <img
+            class="slide__slide"
+            src="./images/pictures/graphic2-pictur.png"
+            alt="Круговая диаграмма"
+          />
+          <img
+            class="hr"
+            src="./images/logos/line2-logo.svg"
+            alt="Разделительная линия"
+          />
+          <div class="slide__slide-even grid-cell">
+            <img
+              class="loop-data"
+              src="./images/pictures/price-pictur.png"
+              alt="Увеличенные данные из таблицы ниже"
+            />
+            <img
+              class="sheet-data"
+              src="./images/pictures/sheet-picture.png"
+              alt="Таблица с данными"
+            />
+          </div>
+          <article class="slide__description-even description">
+            <h2 class="description__h2">Сокращайте лишние расходы</h2>
+            <p class="description__p">
+              Анализируйте расходы, убирать ненужные издержки и находите
+              возможности повышать прибыльность бизнеса
+            </p>
+          </article>
         </div>
       </div>
     </section>
